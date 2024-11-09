@@ -1,0 +1,91 @@
+site_name: 迷糊的狐娘能否梦到奇幻的现实
+site_url: http://127.0.0.1:8000
+
+copyright: <p xmlns:cc="http://creativecommons.org/ns#" >Unless otherwise declared, this work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+
+nav:
+  - "首页": index.md
+  - "角色扮演":
+      - RP/角色扮演介绍.md 
+      - "Claude":
+        - "Claude介绍": RP/Claude/什么是Claude.md
+        - "Pro退款流订阅": RP/Claude/Pro退款流.md
+        - "Cookie抓取": RP/Claude/Cookie抓取.md
+        - "Clewd": RP/Claude/Clewd.md
+        - "配置酒馆": RP/Claude/配置ST.md
+      - "Gemini":
+        - "什么是Gemini": RP/Gemini/什么是Gemini.md
+        - "如何获取Gemini API" : RP/Gemini/获取Gemini_API.md
+        - "搭建反向代理": RP\Gemini\搭建反代.md
+        - "常见问题" : RP/Gemini/Gemini_QA.md
+
+  - "酒馆安装":
+    - ST/ST.md
+plugins:
+  - privacy
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.magiclink
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate 
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
