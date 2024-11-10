@@ -1,5 +1,13 @@
 site_name: 迷糊的狐娘能否梦到奇幻的现实
-site_url: http://127.0.0.1:8000
+site_url: https://awaa-col.github.io/AI-RP/
+site_author: awaa-col
+site_description: 介绍AI角色扮演相关内容，包括Claude、Gemini等模型的使用教程，以及角色卡编写指南和酒馆相关资源
+
+plugins:
+  - privacy
+  - search
+  - minify:
+      minify_html: true
 
 copyright: <p xmlns:cc="http://creativecommons.org/ns#" >Unless otherwise declared, this work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
 
@@ -7,23 +15,34 @@ nav:
   - "首页": index.md
   - "角色扮演":
       - RP/角色扮演介绍.md 
-      - "Claude":
-        - "Claude介绍": RP/Claude/什么是Claude.md
-        - "Pro退款流订阅": RP/Claude/Pro退款流.md
-        - "Cookie抓取": RP/Claude/Cookie抓取.md
-        - "Clewd": RP/Claude/Clewd.md
-        - "配置酒馆": RP/Claude/配置ST.md
-      - "Gemini":
-        - "什么是Gemini": RP/Gemini/什么是Gemini.md
-        - "如何获取Gemini API" : RP/Gemini/获取Gemini_API.md
-        - "搭建反向代理": RP\Gemini\搭建反代.md
-        - "常见问题" : RP/Gemini/Gemini_QA.md
+      - "角色扮演模型":
+        - "Claude":
+          - "Claude介绍": RP/Claude/什么是Claude.md
+          - "懒人一键部署": RP/Claude/RP一键启动脚本.md
+          - "Cookie注册": RP/Claude/Cookie注册.md
+          - "Pro退款流订阅": RP/Claude/Pro退款流.md
+          - "Cookie抓取": RP/Claude/Cookie抓取.md
+          - "Clewd PC部署": RP/Claude/Clewd_PC.md
+          - "Clewd 安卓部署": RP/Claude/Clewd_PE.md
+          - "Clewd IOS部署": RP/Claude/Clewd_IOS.md
+          - "Clewd 云端部署": RP/Claude/Clewd_Cloud.md
+          - "配置酒馆": RP/Claude/配置ST.md
+        - "Gemini":
+          - "什么是Gemini": RP/Gemini/什么是Gemini.md
+          - "如何获取Gemini API" : RP/Gemini/获取Gemini_API.md
+          - "搭建反向代理": RP/Gemini/搭建反代.md
+          - "常见问题" : RP/Gemini/Gemini_QA.md
 
-  - "酒馆安装":
-    - ST/ST.md
-plugins:
-  - privacy
-  - search
+  - "酒馆相关":
+    - "什么是酒馆": ST/ST.md
+    - "角色卡": ST/角色卡获取.md
+
+  - "创作相关":
+    - "角色卡编写": Character_Card/角色卡编写.md
+    - "进阶角色卡编写": Character_Card/进阶角色卡编写.md
+    - "世界书相关知识": Character_Card/世界书相关知识.md
+    - "Cot简介": Character_Card/Cot.md
+    - "个人笔记": Character_Card/总篇.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -65,7 +84,6 @@ theme:
     - content.code.copy
     - content.code.annotate 
   palette:
-
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
@@ -89,3 +107,21 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/awaa-col/AI-RP
+  
+  meta:
+    - name: keywords
+      content: AI, 角色扮演, Claude, Gemini, 教程, 角色卡,写角色卡,酒馆,ST
+    - name: robots
+      content: index, follow
+    - name: author
+      content: 彩狐狸
+    - name: description
+      content: AI角色扮演教程与资源站，包含Claude、Gemini等模型使用指南
+    - name: google-site-verification
+      content: nB6EQivT0zXVGqkJWWRr3tObtAZtRuhqCAWpehV5Z6Y

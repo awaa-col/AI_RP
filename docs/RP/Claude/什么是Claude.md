@@ -9,8 +9,10 @@ Claude 是由 Anthropic 开发的一系列人工智能语言模型的名称。�
 # 为什么选择Claude进行角色扮演?
 - 便宜,借助退款流可以实现几乎无成本的Pro账号使用
 - 更有人情味,相较于chatGPT,Claude的情感会相对丰富一点
+- 渠道多
 
-# 如何使用Claude进行角色扮演?
+# 使用Claude进行角色扮演的渠道?
+
 - 官网 - 不推荐
 - Clewd + ST - 推荐
 - Clewd(修改版) + ST - 十分推荐,该项目对Claude Cookie的结构进行了优化,使得角色扮演更加容易,通常而言,大家说的Clewd指的是修改版的Clewd

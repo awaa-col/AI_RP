@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <meta name="keywords" content="AI角色扮演,Claude教程,Gemini配置,角色卡编写,酒馆设置">
+  <meta name="author" content="Awaa">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <link rel="canonical" href="{{ page.canonical_url }}">
+{% endblock %}
