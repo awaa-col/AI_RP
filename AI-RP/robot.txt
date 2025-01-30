@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://awaa-col.github.io/AI-RP/sitemap.xml
